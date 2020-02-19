@@ -1,0 +1,297 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\gmf123.UNICPH\Documents\Repositories\HANKPY_old\SCF\tagets.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}19 Feb 2020, 09:59:43
+{txt}
+{com}. 
+. // a. load data
+. 
+. use SCF_04_small.dta, clear
+{txt}
+{com}. // taken from official replication material: 
+. // http://benjaminmoll.com/wp-content/uploads/2019/07/HANK_replication.zip
+. 
+. // b. Table C.1
+. sum housepos durables liqpos gb cb indirect_eq direct_eq netbus houseneg nrevccredit revccredit [fw=fwgt], d
+
+                    {txt}gross housing wealth
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0      -207116.2
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 132324.3                      {txt}Mean          {res} 267700.3
+                        {txt}Largest       Std. Dev.     {res} 954128.8
+{txt}75%    {res} 287661.4       6.06e+08
+{txt}90%    {res} 575322.8       6.06e+08       {txt}Variance      {res} 9.10e+11
+{txt}95%    {res} 920516.5       6.46e+08       {txt}Skewness      {res} 173.1132
+{txt}99%    {res}  2475039       6.56e+08       {txt}Kurtosis      {res}  80784.3
+
+                          {txt}durables
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res} 4832.711              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 14958.39                      {txt}Mean          {res} 26332.88
+                        {txt}Largest       Std. Dev.     {res} 135734.9
+{txt}75%    {res} 30492.11       1.16e+08
+{txt}90%    {res} 50628.41       1.16e+08       {txt}Variance      {res} 1.84e+10
+{txt}95%    {res} 71224.96       1.16e+08       {txt}Skewness      {res} 222.6494
+{txt}99%    {res} 183758.1       1.16e+08       {txt}Kurtosis      {res} 110758.7
+
+             {txt}liquid saving plus cash imputation
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}  1.17094              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res} 585.4698              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 3512.819                      {txt}Mean          {res} 27585.32
+                        {txt}Largest       Std. Dev.     {res} 189917.2
+{txt}75%    {res} 15807.69       5.50e+07
+{txt}90%    {res} 50935.88       5.50e+07       {txt}Variance      {res} 3.61e+10
+{txt}95%    {res} 97656.38       5.50e+07       {txt}Skewness      {res} 75.73251
+{txt}99%    {res}   370017       5.50e+07       {txt}Kurtosis      {res} 13556.93
+
+                      {txt}government bonds
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res}        0                      {txt}Mean          {res} 2152.916
+                        {txt}Largest       Std. Dev.     {res} 88465.73
+{txt}75%    {res}        0       3.44e+07
+{txt}90%    {res}        0       3.49e+07       {txt}Variance      {res} 7.83e+09
+{txt}95%    {res}        0       3.49e+07       {txt}Skewness      {res} 258.7226
+{txt}99%    {res} 17259.68       6.93e+07       {txt}Kurtosis      {res} 132460.4
+
+                       {txt}corporate bonds
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res}        0                      {txt}Mean          {res} 4871.841
+                        {txt}Largest       Std. Dev.     {res} 120424.4
+{txt}75%    {res}        0       6.13e+07
+{txt}90%    {res}        0       6.36e+07       {txt}Variance      {res} 1.45e+10
+{txt}95%    {res} 306.8388       6.37e+07       {txt}Skewness      {res} 118.7799
+{txt}99%    {res} 78243.91       7.32e+07       {txt}Kurtosis      {res}  28709.3
+
+                   {txt}indirectly held equity
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 1380.775                      {txt}Mean          {res}  74650.3
+                        {txt}Largest       Std. Dev.     {res} 265722.5
+{txt}75%    {res} 46025.82       4.06e+07
+{txt}90%    {res} 191007.2       4.06e+07       {txt}Variance      {res} 7.06e+10
+{txt}95%    {res} 365905.3       4.40e+07       {txt}Skewness      {res} 17.28012
+{txt}99%    {res}  1028677       4.43e+07       {txt}Kurtosis      {res} 786.0298
+
+                    {txt}directly held equity
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res}        0                      {txt}Mean          {res} 63053.52
+                        {txt}Largest       Std. Dev.     {res} 818481.6
+{txt}75%    {res} 2301.291       2.42e+08
+{txt}90%    {res} 62134.86       2.44e+08       {txt}Variance      {res} 6.70e+11
+{txt}95%    {res} 195609.8       2.59e+08       {txt}Skewness      {res} 113.8086
+{txt}99%    {res}  1021773       2.88e+08       {txt}Kurtosis      {res} 23534.75
+
+                     {txt}net private equity
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0      -2301.291
+{txt} 5%    {res}        0      -2301.291
+{txt}10%    {res}        0      -2301.291       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0      -2301.291       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res}        0                      {txt}Mean          {res} 107554.2
+                        {txt}Largest       Std. Dev.     {res}  1688192
+{txt}75%    {res}        0       6.02e+08
+{txt}90%    {res} 17259.68       6.14e+08       {txt}Variance      {res} 2.85e+12
+{txt}95%    {res}   203089       6.32e+08       {txt}Skewness      {res} 95.24782
+{txt}99%    {res}  1887059       6.70e+08       {txt}Kurtosis      {res} 17917.96
+
+                        {txt}mortgage debt
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 11506.46                      {txt}Mean          {res} 82644.59
+                        {txt}Largest       Std. Dev.     {res} 184411.1
+{txt}75%    {res} 116790.5       2.26e+07
+{txt}90%    {res} 226677.2       3.13e+07       {txt}Variance      {res} 3.40e+10
+{txt}95%    {res} 316427.5       3.27e+07       {txt}Skewness      {res} 19.11358
+{txt}99%    {res} 644361.6       3.49e+07       {txt}Kurtosis      {res} 1227.581
+
+                     {txt}non revolving debt
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res} 575.3228                      {txt}Mean          {res} 11935.55
+                        {txt}Largest       Std. Dev.     {res} 70022.57
+{txt}75%    {res} 13807.75       2.82e+07
+{txt}90%    {res} 29916.79       2.84e+07       {txt}Variance      {res} 4.90e+09
+{txt}95%    {res} 44184.79       2.87e+07       {txt}Skewness      {res} 119.1077
+{txt}99%    {res} 99070.59       3.45e+07       {txt}Kurtosis      {res} 29274.92
+
+                 {txt}revolving credit card debt
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}103,561,920
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}103,561,920
+
+{txt}50%    {res}        0                      {txt}Mean          {res} 2796.755
+                        {txt}Largest       Std. Dev.     {res} 7154.944
+{txt}75%    {res} 2301.291       138077.5
+{txt}90%    {res} 8629.842       138077.5       {txt}Variance      {res} 5.12e+07
+{txt}95%    {res} 14958.39       138077.5       {txt}Skewness      {res}  5.98583
+{txt}99%    {res} 31987.95       138077.5       {txt}Kurtosis      {res} 62.12572
+{txt}
+{com}. 
+. // b. Table 5 (using footnote 37)
+. sum netbrliq netbrilliq income [fw=fwgt]
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}netbrliq {c |}{res}103,561,920    31813.32      263348  -115550.1   9.52e+07
+{txt}{space 2}netbrilliq {c |}{res}103,561,920      444711     2557196  -529987.4   8.07e+08
+{txt}{space 6}income {c |}{res}103,561,920    84968.61    257697.2          0   1.21e+08
+{txt}
+{com}. 
+. local cutoff 1000
+{txt}
+{com}. gen poor_htm = (netbrliq > -`cutoff') & (netbrliq < `cutoff') & (netbrilliq <= 0)
+{txt}
+{com}. gen wealthy_htm = (netbrliq > -`cutoff') & (netbrliq < `cutoff') & (netbrilliq > 0)
+{txt}
+{com}. gen borrowers = netbrliq < -`cutoff'
+{txt}
+{com}. sum poor_htm wealthy_htm borrowers [fw=fwgt]
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}poor_htm {c |}{res}103,561,920    .0650182     .246558          0          1
+{txt}{space 1}wealthy_htm {c |}{res}103,561,920    .2107009    .4078063          0          1
+{txt}{space 3}borrowers {c |}{res}103,561,920    .1678165    .3737032          0          1
+{txt}
+{com}. 
+. tab borrowers [fw=fwgt], summarize(networth)
+
+            {txt}{c |}         Summary of assets - liabilities
+  borrowers {c |}        Mean   Std. Dev.       Freq.        Obs.
+{hline 12}{c +}{hline 48}
+          0 {c |}  {res}  540462.6   2922088.4    86182524  86,182,524
+  {txt}        1 {c |}  {res} 159461.37   416408.63    17379396  17,379,396
+{txt}{hline 12}{c +}{hline 48}
+      Total {c |}  {res} 476524.32   2674893.2   103561920 103,561,920
+{txt}
+{com}. 
+. // c. Table 5: gini
+. inequal7 netbrliq netbrilliq networth
+{txt}Warning: netbrliq has 3581 values < 0 *used* in calculations
+    (except for SD logs, GE(0) (Mean log-deviation) and GE(1) (Theil)).
+Warning: netbrliq has 1299 values == 0 *used* in calculations
+    (except for SD logs, GE(-1), GE(0) (Mean log-deviation) and GE(1) (Theil)).
+Warning: netbrilliq has 1114 values < 0 *used* in calculations
+    (except for SD logs, GE(0) (Mean log-deviation) and GE(1) (Theil)).
+Warning: netbrilliq has 823 values == 0 *used* in calculations
+    (except for SD logs, GE(-1), GE(0) (Mean log-deviation) and GE(1) (Theil)).
+Warning: networth has 1356 values < 0 *used* in calculations
+    (except for SD logs, GE(0) (Mean log-deviation) and GE(1) (Theil)).
+Warning: networth has 334 values == 0 *used* in calculations
+    (except for SD logs, GE(-1), GE(0) (Mean log-deviation) and GE(1) (Theil)).
+
+{hline 41}{c TT}{hline 35}
+                     Inequality measures {c |}   netbrliq  netbrilliq    networth
+{hline 41}{c +}{hline 35}
+                 Relative mean deviation {c |}    {res}0.83306     0.79529     0.79335
+                {txt}Coefficient of variation {c |}    {res}5.90076     4.48668     4.38974
+              {txt}Standard deviation of logs {c |}    {res}3.00424     2.80645     2.95159
+                        {txt}Gini coefficient {c |}    {res}0.94445     0.91626     0.91454
+                          {txt}Mehran measure {c |}    {res}0.99558     0.98150     0.98112
+                          {txt}Piesch measure {c |}    {res}0.91888     0.88364     0.88125
+                         {txt}Kakwani measure {c |}    {res}0.76647     0.71448     0.71166
+              {txt}Theil index (GE(a), a = 1) {c |}    {res}2.46453     2.22681     2.21039
+       {txt}Mean Log Deviation (GE(a), a = 0) {c |}    {res}3.65881     3.37689     3.45309
+           {txt}Entropy index (GE(a), a = -1) {c |}    {res}2.1e+03     7.9e+04     7.8e+03
+{txt}Half (Coeff.Var. squared) (GE(a), a = 2) {c |}   {res}17.40866    10.06468     9.63444
+{txt}{hline 41}{c BT}{hline 35}
+
+{com}. 
+. // d. Table 5: top and bottom shares
+. pshare estimate netbrliq netbrilliq networth [fw=fwgt], percentiles(25 50 90 99 99.9) 
+{txt}(variance estimation not supported with fweights)
+{res}
+{txt}Percentile shares (proportion){col 35}Number of obs{col 51}= {res} 103561920
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 14}{hline 12}
+{col 14}{c |}      Coef.
+{hline 13}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}netbrliq     {txt}{c |}
+{space 8}0-25 {c |}{col 14}{res}{space 2} -.048677
+{txt}{space 7}25-50 {c |}{col 14}{res}{space 2} .0042054
+{txt}{space 7}50-90 {c |}{col 14}{res}{space 2} .1874388
+{txt}{space 7}90-99 {c |}{col 14}{res}{space 2} .3910131
+{txt}{space 5}99-99,9 {c |}{col 14}{res}{space 2} .2911872
+{txt}{space 4}99,9-100 {c |}{col 14}{res}{space 2} .1748326
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}netbrilliq   {txt}{c |}
+{space 8}0-25 {c |}{col 14}{res}{space 2}-.0008756
+{txt}{space 7}25-50 {c |}{col 14}{res}{space 2} .0263091
+{txt}{space 7}50-90 {c |}{col 14}{res}{space 2}  .278376
+{txt}{space 7}90-99 {c |}{col 14}{res}{space 2}  .362485
+{txt}{space 5}99-99,9 {c |}{col 14}{res}{space 2} .2178809
+{txt}{space 4}99,9-100 {c |}{col 14}{res}{space 2} .1158246
+{txt}{hline 13}{c +}{hline 11}{hline 11}{hline 14}{hline 12}
+{res}networth     {txt}{c |}
+{space 8}0-25 {c |}{col 14}{res}{space 2}-.0009319
+{txt}{space 7}25-50 {c |}{col 14}{res}{space 2} .0260836
+{txt}{space 7}50-90 {c |}{col 14}{res}{space 2} .2785434
+{txt}{space 7}90-99 {c |}{col 14}{res}{space 2} .3670395
+{txt}{space 5}99-99,9 {c |}{col 14}{res}{space 2} .2159564
+{txt}{space 4}99,9-100 {c |}{col 14}{res}{space 2} .1133089
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 14}{hline 12}
+
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\gmf123.UNICPH\Documents\Repositories\HANKPY_old\SCF\tagets.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}19 Feb 2020, 09:59:44
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
